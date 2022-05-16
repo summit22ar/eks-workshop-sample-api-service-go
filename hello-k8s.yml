@@ -1,6 +1,12 @@
 apiVersion: v1
+kind: Namespace
+metadata:
+  name: usw2-fargate1
+---
+apiVersion: v1
 kind: Service
 metadata:
+  nameservice: usw2-fargate1
   name: hello-k8s
 spec:
   type: LoadBalancer
