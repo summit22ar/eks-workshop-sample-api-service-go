@@ -13,6 +13,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: usw2-fargate1
   name: hello-k8s
 spec:
   replicas: 3
